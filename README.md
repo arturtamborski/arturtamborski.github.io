@@ -1,2 +1,5 @@
 # arturtamborski.github.io
-just a blog
+just another blog about programming and stuff.
+
+---
+Code and design is mainly based on [Kiko](https://github.com/gfjaru/Kiko).
