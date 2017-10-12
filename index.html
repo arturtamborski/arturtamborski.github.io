@@ -1,0 +1,38 @@
+---
+layout: default
+---
+<div class="content list">
+	{% if site.posts.size == 0 %}
+		<h2 class="masthead-title">Sorry<span>, nothing's here.</span></h2>
+	{% else %}
+		{% for post in site.posts %}
+			<div class="list-item">
+				<h2 class="list-post-title">
+					<a href="{{ site.url }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.id }}">{{ post.title }}</a>
+				</h2>
+				<div class="list-post-date">
+					<time>{{ post.date | date_to_string }}</time>
+				</div>
+				<span class="list-post-comments" data-disqus-identifier="{{ post.id }}"></span>
+				{% if post.tags.size %}
+					<div class="list-post-tag">
+						<ul>
+							{% for tag in post.tags %}
+								<li>
+									<a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
+										<span>{{ tag }}</span>
+									</a>
+								</li>
+							{% endfor %}
+						</ul>
+					</div>
+				{% endif %}
+				{% if post.description %}
+					<div class="list-post-desc">
+						{{ post.description }}
+					</div>
+				{% endif %}
+			</div>
+		{% endfor %}
+	{% endif %}
+</div>
