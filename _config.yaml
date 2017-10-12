@@ -1,0 +1,47 @@
+author:			"Artur Tamborski"
+name:			"Artur"
+description:		"just a blog about programming and stuff"
+
+#url:			"https://arturtamborski.pl"
+enforce_ssl:		arturtamborski.pl
+url:			"http://localhost:4000"
+baseurl:		""
+
+timezone: 		Europe/Warsaw
+permalink:		/:year/:month/:title
+
+markdown:		kramdown
+
+disqus:
+  id:			"arturtamborski-pl"
+
+nav:
+  - name:		"about"
+    href:		"/about"
+  - name:		"tags"
+    href:		"/tags"
+  - name:		"feed"
+    href:		"/feed.xml"
+  - name:		"|"
+    href:		"#"
+  - name:		"twitter"
+    href:		"https://twitter.com/arturtamborski"
+  - name:		"github"
+    href:		"https://github.com/arturtamborski"
+
+sass:
+  style:		:compressed
+
+defaults:
+  -
+    scope:
+      path:		""
+      type:		"pages"
+    values:
+      layout:		"page"
+  -
+    scope:
+      path:		""
+      type:		"posts"
+    values:
+      layout:		"post"
