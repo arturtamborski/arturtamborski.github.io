@@ -351,6 +351,9 @@ tbody tr:nth-child(odd) th {
     margin-bottom: .5rem;
     font-size: .75rem;
     text-transform: uppercase;
+    a {
+      margin-left: 0.25rem;
+    }
   }
 
   &-tag {
@@ -405,8 +408,12 @@ tbody tr:nth-child(odd) th {
   }
   &-post-date {
     margin-bottom: .25rem;
+    margin-right: 20px;
     font-size: .75rem;
     text-transform: uppercase;
+    a {
+      margin-left: 0.25rem;
+    }
   }
   &-post-desc {
     margin-bottom: .25rem;
