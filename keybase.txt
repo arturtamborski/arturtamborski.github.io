@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/arturtamborski
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://arturtamborski.pl
+  * I am arturtamborski (https://keybase.io/arturtamborski) on keybase.
+  * I have a public key ASA-mGO46Ymooz8NRi3JSpG76wXMyqrLtEUfyLbQN_VuSQo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01203e9863b8e989a8a33f0d462dc94a91bbeb05cccaaacbb4451fc8b6d037f56e490a",
+      "host": "keybase.io",
+      "kid": "01203e9863b8e989a8a33f0d462dc94a91bbeb05cccaaacbb4451fc8b6d037f56e490a",
+      "uid": "df765ac3057741171f8b1f70e45bcc19",
+      "username": "arturtamborski"
+    },
+    "merkle_root": {
+      "ctime": 1508661364,
+      "hash": "301f7024dad2f9a110d96ba30068f3ebf3ccb99e44e74c924a7eca5ee08a9fc21453dbf743cc1f7e03a516411cf932c621be35714a402efb9119ae13b5331216",
+      "hash_meta": "8d492c58d680e02d36292bef42cbe7bfd9cbed1431eeff606d3d8a024e509cb2",
+      "seqno": 1614324
+    },
+    "service": {
+      "hostname": "arturtamborski.pl",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.30"
+  },
+  "ctime": 1508661395,
+  "expire_in": 504576000,
+  "prev": "05fda59bdb42aaf3805d44d1c0a6bd6245f643227ba31d760f1e7a01d125fb57",
+  "seqno": 15,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgPphjuOmJqKM/DUYtyUqRu+sFzMqqy7RFH8i20Df1bkkKp3BheWxvYWTFA1B7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwM2U5ODYzYjhlOTg5YThhMzNmMGQ0NjJkYzk0YTkxYmJlYjA1Y2NjYWFhY2JiNDQ1MWZjOGI2ZDAzN2Y1NmU0OTBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwM2U5ODYzYjhlOTg5YThhMzNmMGQ0NjJkYzk0YTkxYmJlYjA1Y2NjYWFhY2JiNDQ1MWZjOGI2ZDAzN2Y1NmU0OTBhIiwidWlkIjoiZGY3NjVhYzMwNTc3NDExNzFmOGIxZjcwZTQ1YmNjMTkiLCJ1c2VybmFtZSI6ImFydHVydGFtYm9yc2tpIn0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTA4NjYxMzY0LCJoYXNoIjoiMzAxZjcwMjRkYWQyZjlhMTEwZDk2YmEzMDA2OGYzZWJmM2NjYjk5ZTQ0ZTc0YzkyNGE3ZWNhNWVlMDhhOWZjMjE0NTNkYmY3NDNjYzFmN2UwM2E1MTY0MTFjZjkzMmM2MjFiZTM1NzE0YTQwMmVmYjkxMTlhZTEzYjUzMzEyMTYiLCJoYXNoX21ldGEiOiI4ZDQ5MmM1OGQ2ODBlMDJkMzYyOTJiZWY0MmNiZTdiZmQ5Y2JlZDE0MzFlZWZmNjA2ZDNkOGEwMjRlNTA5Y2IyIiwic2Vxbm8iOjE2MTQzMjR9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoiYXJ0dXJ0YW1ib3Jza2kucGwiLCJwcm90b2NvbCI6Imh0dHBzOiJ9LCJ0eXBlIjoid2ViX3NlcnZpY2VfYmluZGluZyIsInZlcnNpb24iOjF9LCJjbGllbnQiOnsibmFtZSI6ImtleWJhc2UuaW8gZ28gY2xpZW50IiwidmVyc2lvbiI6IjEuMC4zMCJ9LCJjdGltZSI6MTUwODY2MTM5NSwiZXhwaXJlX2luIjo1MDQ1NzYwMDAsInByZXYiOiIwNWZkYTU5YmRiNDJhYWYzODA1ZDQ0ZDFjMGE2YmQ2MjQ1ZjY0MzIyN2JhMzFkNzYwZjFlN2EwMWQxMjVmYjU3Iiwic2Vxbm8iOjE1LCJ0YWciOiJzaWduYXR1cmUifaNzaWfEQD/80w/ZJnW76dPqLmz6abxCynDzns/KORzDGJxypICgMC8jpDPBZcKPdU8TZu6vwRKJl8QuvubjBVnayWRPUwOoc2lnX3R5cGUgpGhhc2iCpHR5cGUIpXZhbHVlxCDmdIyLN+XBgvR2bINDlr/TbRJRJH8pb2tELHGLtcKBbqN0YWfNAgKndmVyc2lvbgE=
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/arturtamborski
+
+==================================================================
