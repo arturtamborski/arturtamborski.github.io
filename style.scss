@@ -325,6 +325,7 @@ tbody tr:nth-child(odd) th {
 
       &-local:after {
         content: "";
+        margin-right: 0;
       }
     }
 
