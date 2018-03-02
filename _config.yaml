@@ -1,47 +1,60 @@
-author:			"Artur Tamborski"
-name:			"Artur"
-description:		"just a blog about programming and stuff"
+name: Artur
+title: Artur's blog
+author: Artur Tamborski
+description: Programming and tinkering with electronics.
 
-baseurl:		""
-#url:			"http://localhost:4000"
-url:			"https://arturtamborski.pl"
-enforce_ssl:		arturtamborski.pl
-
-timezone: 		Europe/Warsaw
-permalink:		/:year/:month/:title
-
-markdown:		kramdown
+#url: http://localhost:4000
+url: https://arturtamborski.pl
+baseurl: 
 
 disqus:
-  id:			"arturtamborski-pl"
+  id: arturtamborski-pl
+
+github:
+  username: arturtamborski
+
+twitter:
+  username: arturtamborski
+
+author:
+  twitter: arturtamborski
+
+social:
+  name: Artur Tamborski
+  links:
+    - https://keybase.io/arturtamborski
+    - https://github.com/arturtamborski
+    - https://twitter.com/arturtamborski
+    - https://facebook.com/tamborskiartur
+    - https://plus.google.com/100097744760992392463
 
 nav:
-  - name:		"about"
-    href:		"/about"
-  - name:		"tags"
-    href:		"/tags"
-  - name:		"feed"
-    href:		"/feed.xml"
-  - name:		"|"
-    href:		"#"
-  - name:		"twitter"
-    href:		"https://twitter.com/arturtamborski"
-  - name:		"github"
-    href:		"https://github.com/arturtamborski"
+  local:
+    - name: about
+      href: /about
+    - name: tags
+      href: /tags
+    - name: feed
+      href: /feed.xml
+
+  external:
+    - name: github
+      href: https://github.com/arturtamborski
+    - name: twitter
+      href: https://twitter.com/arturtamborski
+
+lang: pl_PL
+language: pl
+timezone: Europe/Warsaw
+permalink: /:year/:month/:title
+
+markdown: kramdown
 
 sass:
-  style:		:compressed
+  style: :compressed
 
-defaults:
-  -
-    scope:
-      path:		""
-      type:		"pages"
-    values:
-      layout:		"page"
-  -
-    scope:
-      path:		""
-      type:		"posts"
-    values:
-      layout:		"post"
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-avatar
+  - jekyll-feed
