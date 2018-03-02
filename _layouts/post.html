@@ -1,41 +1,47 @@
 ---
-layout: default
+layout: base
 ---
-<div class="content post">
-	<h1 class="post-title">{{ page.title }}</h1>
-	<div class="post-date">
-		<time>{{ page.date | date_to_string }}</time>
-		<a href="{{ site.url }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.id }}"></a>
-	</div>
-	<div class="post-tag">
-		<ul>
-			{% for tag in page.tags %}
-				<li>
-					<a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
-						<span>{{ tag }}</span>
-					</a>
-				</li>
-			{% endfor %}
-		</ul>
-	</div>
-	{{ content }}
+<div class="post">
+  <div class="post-header">
+    <div class="post-title">
+      <h1>{{ page.title }}</h1>
+    </div>
+    <div class="post-aside">
+      <div class="post-date">
+        <span>{{ page.date | date_to_string }}</span>
+        {% if page.comments %}
+        <a href="{{ site.url }}{{ site.baseurl }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.id }}"></a>
+        {% endif %}
+      </div>
+      {% if page.tags %}
+      <div class="post-tags">
+        {% for tag in page.tags %}
+        <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </div>
+  <div class="post-content">
+  {{ content }}
+  </div>
 </div>
 {% if page.comments %}
-	<div id="disqus_thread"></div>
-	<script>
-		var disqus_config = function () {
-			this.page.url = '{{ site.url }}{{ page.url }}';
-			this.page.identifier = '{{ page.id }}';
-			this.page.title = '{{ page.title }}';
-		};
-		(function() {
-			var d = document, s = d.createElement('script');
-			s.src = 'https://{{ site.disqus.id }}.disqus.com/embed.js';
-			s.setAttribute('data-timestamp', +new Date());
-			(d.head || d.body).appendChild(s);
-		})();
-	</script>
-	<noscript>
-		Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-	</noscript>
+<div class="post-comments" id="disqus_thread"></div>
+  <script>
+    var disqus_config = function(){
+      this.page.url = '{{ site.url }}{{ site.baseurl }}{{ page.url }}';
+      this.page.identifier = '{{ page.id }}';
+      this.page.title = '{{ page.title }}';
+    };
+    (function(){
+      var d = document, s = d.createElement('script');
+      s.src = 'https://{{ site.disqus.id }}.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+  <noscript>
+    Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+  </noscript>
 {% endif %}

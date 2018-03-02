@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}'s blog</title>
+    <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/{{ site.github.username }}?s=32"/>
+    <link rel="stylesheet" href="{{ site.baseurl }}/style.css"/>
+    <link type="application/atom+xml" rel="alternate" href="{{ site.url }}{{ site.baseurl }}/feed.xml" title="{{ site.name }}'s blog"/>
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.url }}{{ site.baseurl }}/sitemap.xml"/>
+    {% seo %}
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header-avatar">
+          {% avatar size=100 user=site.github.username %}
+        </div>
+        <div class="header-content">
+          <div class="header-title">
+            <h1><a href="{{ site.baseurl }}/">{{ site.name }}<span>&#39;s blog</span></a></h1>
+          </div>
+          <div class="header-nav">
+            <div class="header-nav-local">
+              {% for nav in site.nav.local %}
+              <a href="{{ site.baseurl }}{{ nav.href }}">{{ nav.name }}</a>
+              {% endfor %}
+            </div>
+            <div class="header-nav-external">
+              {% for nav in site.nav.external %}
+              <a href="{{ nav.href }}" target="_blank">{{ nav.name }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{ content }}
+    </div>
+    <script id="dsq-count-scr" src="//{{ site.disqus.id }}.disqus.com/count.js" async></script>
+  </body>
+</html>
+
