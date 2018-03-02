@@ -1,39 +1,32 @@
 ---
-layout: default
+layout: base
 ---
-<div class="content list">
-	{% if site.posts.size == 0 %}
-		<h2 class="masthead-title">Sorry<span>, there is nothing here.</span></h2>
-	{% else %}
-		{% for post in site.posts %}
-			<div class="list-item">
-				<h2 class="list-post-title">
-					<a href="{{ post.url }}">{{ post.title }}</a>
-				</h2>
-				<div class="list-post-date">
-					<time>{{ post.date | date_to_string }}</time>
-					<a href="{{ site.url }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.id }}"></a>
-				</div>
-				<span class="list-post-comments" data-disqus-identifier="{{ post.id }}"></span>
-				{% if post.tags.size %}
-					<div class="list-post-tag">
-						<ul>
-							{% for tag in post.tags %}
-								<li>
-									<a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
-										<span>{{ tag }}</span>
-									</a>
-								</li>
-							{% endfor %}
-						</ul>
-					</div>
-				{% endif %}
-				{% if post.description %}
-					<div class="list-post-desc">
-						{{ post.description }}
-					</div>
-				{% endif %}
-			</div>
-		{% endfor %}
-	{% endif %}
+{% if site.posts.size == 0 %}
+<h2>Sorry, there is nothing here.</h2>
+{% else %}
+{% for post in site.posts %}
+<div class="post-list">
+  <div class="post-list-header">
+    <div class="post-list-title">
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    </div>
+    <div class="post-list-aside">
+      <div class="post-list-date">
+        <span>{{ post.date | date_to_string }}</span>
+        <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}#disqus_thread" data-disqus-identifier="{{ post.id }}"></a>
+      </div>
+      <div class="post-list-tags">
+        {% for tag in post.tags %}
+        <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">{{ tag }}</a>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  {% if post.description %}
+  <div class="post-list-content">
+    {{ post.description }}
+  </div>
+  {% endif %}
 </div>
+{% endfor %}
+{% endif %}

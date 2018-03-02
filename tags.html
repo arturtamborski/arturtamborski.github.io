@@ -1,40 +1,24 @@
 ---
-layout: page
-title: tags
+layout: base
 permalink: /tags
 ---
-<div class="tag-index">
-	<ul>
-		{% for tag in site.tags %}
-			<li>
-				<a href="#{{ tag[0] }}">
-					<span>{{ tag[0] }}</span>
-				</a>
-			</li>
-		{% endfor %}
-	</ul>
+<div class="tags">
+  <div class="tags-list">
+    {% for tag in site.tags %}
+    <a href="#{{ tag[0] }}">{{ tag[0] }}</a>
+    {% endfor %}
+  </div>
+  {% if site.tags %}
+  {% for tag in site.tags %} 
+  <h2 class="tags-title" id="{{ tag[0] }}">{{ tag[0] }}</h2>
+  {% for post in site.posts %} 
+  {% if post.tags contains tag[0] %}
+  <div class="tags-post">
+    <div class="tags-post-date">{{ post.date | date_to_string }}</div>
+    <h3 class="tags-post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+  </div>
+  {% endif %}
+  {% endfor %}
+  {% endfor %}
+  {% endif %}
 </div>
-{% if site.tags %}
-	{% for tag in site.tags %} 
-		<div id="{{ tag[0] }}">  
-			<h2 class="tag-title">{{ tag[0] }}</h2>
-			<ul>
-				{% for post in site.posts %} 
-					{% if post.tags contains tag[0] %}
-						<li class="tag-post">
-							{% if post.link %}
-								<a href="{{ post.link }}">
-									<span class="tag-post-title">{{ post.title }}</span>
-								</a>
-							{% else %}
-								<a href="{{ post.url | prepend: site.baseurl }}">
-									<span class="tag-post-title">{{ post.title }}</span>
-								</a>
-							{% endif %}  
-						</li>
-					{% endif %}
-				{% endfor %}
-			</ul>
-		</div>
-	{% endfor %}
-{% endif %}

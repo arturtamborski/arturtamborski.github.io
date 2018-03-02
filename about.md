@@ -1,16 +1,16 @@
 ---
 layout: page
-title: about me
+title: About me
 permalink: /about
 ---
 
-Hi, I'm Artur and this is my blog.
-You can find here posts about programming, computers and stuff.
+Hi, I'm Artur and this is my blog :)
 
-I'm interested in almost every aspect of Information Technology.  
-I also like to know how things work in a detailed manner.  
+You can find here posts about programming, tinkering with electronics and hopefully many more.
+
+I'm interested in almost every aspect of technology and I like to know how things work.
 Besides that I love pretty much every genre of music.
 
-If you would like to know more about me then you could check out my [github](https://github.com/arturtamborski/) profile where I keep the source code of my projects or my [twitter](https://twitter.com/arturtamborski) account where I post some random thoughts.
+If you would like to know more about me then you can check out my [github](https://github.com/arturtamborski/) profile where I keep the source code of my projects or my [twitter](https://twitter.com/arturtamborski) account where I post some random thoughts.
 
 You can contact me on [keybase](https://keybase.io/arturtamborski) or via [email](mailto:tamborskiartur@gmail.com).

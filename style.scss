@@ -2,8 +2,8 @@
 ---
 * {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
@@ -13,7 +13,7 @@ body {
 }
 
 html {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
@@ -27,7 +27,10 @@ body {
   color: #515151;
   background-color: #fff;
   -webkit-text-size-adjust: 100%;
-      -ms-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+
+  margin: 4rem auto 2rem auto;
+  max-width: 38rem;
 }
 
 a {
@@ -41,12 +44,10 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: .5rem;
-  font-weight: 600;
-  line-height: 1.1;
   color: #333;
-  letter-spacing: -.025rem;
+  margin: 0 0 .5rem 0;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 h1 {
@@ -70,8 +71,7 @@ p {
 }
 
 ul, ol, dl {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin: 0 0 1rem 0;
 }
 
 dt {
@@ -137,9 +137,9 @@ strong {
 }
 
 abbr {
+  color: #555;
   font-size: 85%;
   font-weight: bold;
-  color: #555;
   text-transform: uppercase;
 }
 
@@ -149,9 +149,9 @@ abbr[title] {
 }
 
 blockquote {
+  color: #999;
   padding: 0 0 0 1.5rem;
   margin: 0 2rem 1rem 0;
-  color: #999;
   border-left: .5rem solid #e5e5e5;
 
   p:last-child {
@@ -165,9 +165,9 @@ pre {
 }
 
 code {
+  color: #bf616a;
   padding: .25em .5em;
   font-size: 85%;
-  color: #bf616a;
   background-color: #f9f9f9;
   border-radius: 3px;
 }
@@ -231,7 +231,7 @@ img {
   display: block;
   max-width: 100%;
   margin: 0 0 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 table {
@@ -252,255 +252,228 @@ tbody tr:nth-child(odd) th {
   background-color: #f9f9f9;
 }
 
-.lead {
-  font-size: 1.25rem;
-}
-
 .container {
-  max-width: 38rem;
-  padding: 2rem 1.5rem;
-  margin-left:  auto;
-  margin-right: auto;
-
-  @media (min-width: 38rem){
-    padding: 5rem 1rem;
-  }
+  margin: 0 1rem 1rem 1rem;
 }
 
-.masthead {
+.header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 4rem;
+
+  &-avatar {
+    img {
+      margin: 0 1rem;
+      border-radius: 50%;
+    }
+  }
+
+  &-content {
+  }
 
   &-title {
-    font-weight: 300;
+    margin-top: 0.5rem;
+    &:hover,
+    &:focus {
+      span {
+        color: #333;
+      }
+    }
 
     a {
       color: #333;
-
-      &:hover,
-      &:focus {
-        text-decoration: none;
-      }
+      text-decoration: none;
     }
 
     span {
       color: #bbb;
       -webkit-transition: all .2s ease;
-         -moz-transition: all .2s ease;
-              transition: all .2s ease;
-      &:hover,
-      &:focus {
-        color: #333;
-      }
-    }
-
-  }
-
-  &-title--small {
-    margin-bottom: .75rem;
-    font-size: .75rem;
-    font-weight: 600;
-    text-transform: uppercase;
-
-    a {
-      color: #333;
-
-      &:hover,
-      &:focus {
-        text-decoration: none;
-      }
+      -moz-transition: all .2s ease;
+      transition: all .2s ease;
     }
   }
 
-  .masthead-nav {
-    margin-bottom: 2rem;
+  &-nav {
+    display: flex;
+    flex-direction: row;
 
     a {
+      padding-right: 0.25rem;
+    }
+
+    &-local {
+    }
+
+    &-local:after {
       color: #bbb;
-      font-weight: 300;
-      text-transform: lowercase;
-      -webkit-transition: all .2s ease;
-         -moz-transition: all .2s ease;
-              transition: all .2s ease;
+      content: "|";
+      margin-right: 0.33rem;
+    }
 
-      &:hover,
-      &:focus {
-        color: #333;
-        text-decoration: none;
-      }
-
-      + a {
-        margin-left: .25rem;
-      }
+    &-external {
     }
   }
 
+  @media (max-width: 38em) {
+    flex-direction: column;
+    align-items: center;
+
+    &-nav {
+      flex-direction: column;
+      align-items: center;
+
+      &-local:after {
+        content: "";
+      }
+    }
+
+  }
 }
 
 .page {
   &-title {
     margin-bottom: 2rem;
   }
+
+  &-content {
+  }
 }
 
 .post {
   margin-bottom: 2rem;
 
-  &-title {
-    margin-bottom: .25rem;
+  &-header {
+    padding-bottom: 2rem;
   }
+
+  &-title {
+  }
+
+  &-aside {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
   &-date {
-    margin-bottom: .5rem;
-    font-size: .75rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
-    a {
-      margin-left: 0.25rem;
+    margin-right: 1rem;
+    span {
+      margin-right: 1rem;
     }
   }
 
-  &-tag {
-    margin-bottom: 2rem;
+  &-tags {
+    font-size: 0.75rem;
 
-    ul {
-      li:before {
-        content: "";
-      }
-      li {
-        margin: 0;
-        font-size: .75rem;
-        font-weight: 300;
-        display: inline;
-        list-style-type: none;
-        text-transform: lowercase;
-
-        a {
-          display: inline-block;
-          list-style-position: inside;
-          border: 1px solid #ccc;
-          border-radius: 25px;
-
-          span {
-            float: left;
-            padding: .9px 9px;
-          }
-	  span:before { 
-            content:"#"; 
-          }
-        }
-      }
+    a:before {
+      content: "#";
     }
+
+    a {
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      padding: 0.05rem 0.5rem;
+      margin-right: 0.25rem;
+    }
+  }
+
+  &-content {
+  }
+
+  &-comments {
   }
 }
 
-.list {
-  &-item:not(:last-of-type) {
-    margin-bottom: 2rem;
-  }
-  &-post-title {
-    margin-bottom: .25rem;
+.post-list {
+  margin-bottom: 3rem;
 
-    a {
-      color: #333;
-
-      &:hover,
-      &:focus {
-        text-decoration: none;
-      }
-    }
-  }
-  &-post-date {
-    margin-bottom: .25rem;
-    margin-right: 20px;
-    font-size: .75rem;
-    text-transform: uppercase;
-    a {
-      margin-left: 0.25rem;
-    }
-  }
-  &-post-desc {
-    margin-bottom: .25rem;
-    font-size: 1rem;
-  }
-  &-post-tag {
-    ul {
-      margin-bottom: 0;
-      li:before {
-        content: "";
-      }
-      li {
-        margin: 0;
-        font-size: .75rem;
-        font-weight: 300;
-        display: inline;
-        list-style-type: none;
-        text-transform: lowercase;
-
-        a {
-          display: inline-block;
-          list-style-position: inside;
-          border: 1px solid #ccc;
-          border-radius: 25px;
-
-          span {
-            float: left;
-            padding: .9px 9px;
-          }
-	  span:before { 
-            content:"#"; 
-          }
-        }
-      }
-    }
-  }
-}
-
-.tag {
-  &-index {
-    margin-bottom: 1rem;
-    ul {
-      margin-bottom: 0;
-      list-style-type: none;
-      li {
-        margin: 0;
-        font-size: .75rem;
-        font-weight: 300;
-        display: inline;
-        text-transform: lowercase;
-
-        a {
-          display: inline-block;
-          list-style-position: inside;
-          border: 1px solid #ccc;
-          border-radius: 25px;
-
-          span {
-            float: left;
-            padding: .9px 9px;
-          }
-	  span:before { 
-            content: "#"; 
-          }
-        }
-      }
-    }
-  }
-
-  &-post {
-    list-style: none;
+  &-header {
+    padding-bottom: 0.5rem;
   }
 
   &-title {
-    font-size: 1.4rem;
-    font-weight: 600;
-    text-transform: lowercase;
-    padding: 1rem 0 0 0;
   }
+
+  &-aside {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+
+  &-date {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    margin-right: 0.5rem;
+    span {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &-tags {
+    font-size: 0.7rem;
+
+    a:before {
+      content: "#";
+    }
+
+    a {
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      padding: 0.05rem 0.5rem;
+      margin-right: 0.25rem;
+    }
+  }
+
+  &-content {
+  }
+
+  &-comments {
+  }
+}
+
+.tags {
+  &-list {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+
+    a:before {
+      content: "#";
+    }
+
+    a {
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      padding: 0.05rem 0.5rem;
+      margin-right: 0.25rem;
+    }
+  }
+
   &-title:before {
     content: "#";
   }
-}
 
-.projects-list {
-  a {
-    color: #333;
+  &-title {
+    margin-top: 2rem;
+  }
+
+  &-post {
+    display: flex;
+    flex-flow: row wrap;
+
+    &-title {
+      display: inline-block;
+    }
+
+    &-date {
+      text-transform: uppercase;
+      width: 6.5rem;
+    }
   }
 }
 
