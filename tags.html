@@ -3,19 +3,19 @@ layout: base
 permalink: /tags
 ---
 <div class="tags">
-  <div class="tags-list">
+  <div class="post-tags tags-list">
     {% for tag in site.tags %}
     <a href="#{{ tag[0] }}">{{ tag[0] }}</a>
     {% endfor %}
   </div>
   {% if site.tags %}
   {% for tag in site.tags %} 
-  <h2 class="tags-title" id="{{ tag[0] }}">{{ tag[0] }}</h2>
+  <h2 class="post-title-small tags-title" id="{{ tag[0] }}">{{ tag[0] }}</h2>
   {% for post in site.posts %} 
   {% if post.tags contains tag[0] %}
   <div class="tags-post">
-    <div class="tags-post-date">{{ post.date | date_to_string }}</div>
-    <h3 class="tags-post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+    <div class="post-date-small tags-post-date">{{ post.date | date_to_string }}</div>
+    <h3 class="post-title-small tags-post-title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
   </div>
   {% endif %}
   {% endfor %}
