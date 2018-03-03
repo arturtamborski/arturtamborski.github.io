@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
+    <meta http-equiv="Content-Security-Policy" content="default-src https:">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="deny">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.name }}'s blog</title>
-    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/favicon.ico"/>
-    <link rel="stylesheet" href="{{ site.baseurl }}/style.css"/>
-    <link type="application/atom+xml" rel="alternate" href="{{ site.url }}{{ site.baseurl }}/feed.xml" title="{{ site.name }}'s blog"/>
-    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.url }}{{ site.baseurl }}/sitemap.xml"/>
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon.png">
+    <link type="application/atom+xml" rel="alternate" href="{{ site.url }}{{ site.baseurl }}/feed.xml" title="{{ site.name }}'s blog">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="{{ site.url }}{{ site.baseurl }}/sitemap.xml">
     {% seo %}
   </head>
   <body>
@@ -37,5 +40,7 @@
       {{ content }}
     </div>
     <script id="dsq-count-scr" src="//{{ site.disqus.id }}.disqus.com/count.js" async></script>
+    <link rel="stylesheet" href="{{ site.baseurl }}/style.css" media="none" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="{{ site.baseurl }}/style.css"></noscript>
   </body>
 </html>
