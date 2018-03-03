@@ -274,6 +274,12 @@ tbody tr:nth-child(odd) th {
 
   &-title {
     margin-top: 0.5rem;
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
     &:hover,
     &:focus {
       span {
@@ -281,13 +287,8 @@ tbody tr:nth-child(odd) th {
       }
     }
 
-    a {
-      color: #333;
-      text-decoration: none;
-    }
-
     span {
-      color: #bbb;
+      color: #999;
       -webkit-transition: all .2s ease;
       -moz-transition: all .2s ease;
       transition: all .2s ease;
@@ -298,7 +299,17 @@ tbody tr:nth-child(odd) th {
     display: flex;
     flex-direction: row;
 
+    a:hover,
+    a:focus {
+      color: #333;
+      -webkit-transition: all .2s ease;
+      -moz-transition: all .2s ease;
+      transition: all .2s ease;
+    }
+
     a {
+      color: #999;
+      text-decoration: none;
       padding-right: 0.25rem;
     }
 
@@ -306,7 +317,7 @@ tbody tr:nth-child(odd) th {
     }
 
     &-local:after {
-      color: #bbb;
+      color: #999;
       content: "|";
       margin-right: 0.33rem;
     }
@@ -334,7 +345,7 @@ tbody tr:nth-child(odd) th {
 
 .page {
   &-title {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   &-content {
@@ -342,104 +353,121 @@ tbody tr:nth-child(odd) th {
 }
 
 .post {
-  margin-bottom: 2rem;
-
-  &-header {
-    padding-bottom: 2rem;
-  }
-
-  &-title {
-  }
-
-  &-aside {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-  }
-
-  &-date {
-    font-size: 0.75rem;
-    text-transform: uppercase;
-    margin-right: 1rem;
-    span {
-      margin-right: 1rem;
-    }
-  }
-
-  &-tags {
-    font-size: 0.75rem;
-
-    a:before {
-      content: "#";
-    }
-
-    a {
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 25px;
-      padding: 0.05rem 0.5rem;
-      margin-right: 0.25rem;
-    }
-  }
-
-  &-content {
-  }
-
-  &-comments {
-  }
-}
-
-.post-list {
   margin-bottom: 3rem;
 
   &-header {
-    padding-bottom: 0.5rem;
+    padding-bottom: 3rem;
+
+    &-small {
+      padding-bottom: 0.25rem;
+    }
   }
 
   &-title {
+    &-small {
+      a:hover,
+      a:focus {
+        border-color: #333;
+      }
+
+      a {
+        color: #333;
+        text-decoration: none;
+        border-bottom: 2px solid transparent;
+        -webkit-transition: all .2s ease;
+        -moz-transition: all .2s ease;
+        transition: all .2s ease;
+      }
+    }
   }
 
   &-aside {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+
+    &-small {
+    }
   }
 
   &-date {
-    font-size: 0.75rem;
+    color: #999;
+    font-size: 0.85rem;
     text-transform: uppercase;
-    margin-right: 0.5rem;
+    margin-right: 1rem;
+
     span {
+      margin-right: 1rem;
+    }
+
+    &-small {
+      font-size: 0.75rem;
       margin-right: 0.5rem;
+
+      span {
+        margin-right: 0.5rem;
+      }
+    }
+
+    a:hover, a:focus {
+      color: #333;
+      -webkit-transition: all .2s ease;
+      -moz-transition: all .2s ease;
+      transition: all .2s ease;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
     }
   }
 
   &-tags {
-    font-size: 0.7rem;
+    font-size: 0.80rem;
 
     a:before {
       content: "#";
     }
 
+    a:hover,
+    a:focus {
+      color: #333;
+      border: 1px solid #333;
+      -webkit-transition: all .2s ease;
+      -moz-transition: all .2s ease;
+      transition: all .2s ease;
+    }
+
     a {
+      color: #999;
       display: inline-block;
       border: 1px solid #ccc;
       border-radius: 25px;
       padding: 0.05rem 0.5rem;
       margin-right: 0.25rem;
+      text-decoration: none;
+    }
+
+    &-small {
+      font-size: 0.70rem;
     }
   }
 
   &-content {
+    &-small {
+    }
   }
 
   &-comments {
+    &-small {
+    }
   }
 }
 
 .tags {
   &-list {
-    font-size: 1.25rem;
+    text-align: center;
+    font-size: 1.125rem;
     margin-bottom: 3rem;
 
     a:before {
@@ -447,10 +475,7 @@ tbody tr:nth-child(odd) th {
     }
 
     a {
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 25px;
-      padding: 0.25rem 0.5rem;
+      padding: 0.125rem 0.75rem;
       margin: 0.25rem;
     }
   }
@@ -460,21 +485,24 @@ tbody tr:nth-child(odd) th {
   }
 
   &-title {
-    margin-top: 2rem;
+    margin-top: 3rem;
   }
 
   &-post {
     display: flex;
-    flex-flow: row wrap;
-
-    &-title {
-      display: inline-block;
-    }
+    flex-flow: row nowrap;
+    margin-top: 1rem;
 
     &-date {
+      min-width: 4.4rem;
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
       text-transform: uppercase;
-      width: 6rem;
     }
+
+    &-title {
+    }
+
   }
 }
 
