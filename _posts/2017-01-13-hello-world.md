@@ -4,7 +4,7 @@ title: Hello, World!
 description: Third time's a charm
 comments: true
 tags:
-- thoughts
+- blog
 ---
 
 Once upon a time I wanted to have a blog, but I din't knew how to do it properly. I only knew that I need some blogging app for showing my posts to the world and some time to make it run correctly.
