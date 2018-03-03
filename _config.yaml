@@ -51,7 +51,9 @@ permalink: /:year/:month/:title
 markdown: kramdown
 
 sass:
-  style: :compressed
+  style: compressed
+
+includes_dir: .
 
 plugins:
   - jekyll-sitemap
