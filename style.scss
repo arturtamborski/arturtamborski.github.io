@@ -439,8 +439,8 @@ tbody tr:nth-child(odd) th {
 
 .tags {
   &-list {
-    font-size: 1rem;
-    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    margin-bottom: 3rem;
 
     a:before {
       content: "#";
@@ -450,8 +450,8 @@ tbody tr:nth-child(odd) th {
       display: inline-block;
       border: 1px solid #ccc;
       border-radius: 25px;
-      padding: 0.05rem 0.5rem;
-      margin-right: 0.25rem;
+      padding: 0.25rem 0.5rem;
+      margin: 0.25rem;
     }
   }
 
@@ -473,7 +473,7 @@ tbody tr:nth-child(odd) th {
 
     &-date {
       text-transform: uppercase;
-      width: 6.5rem;
+      width: 6rem;
     }
   }
 }
