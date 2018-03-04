@@ -262,6 +262,8 @@ tbody tr:nth-child(odd) th {
 
   &-avatar {
     img {
+      width: 100px;
+      height: 100px;
       margin: 0 1rem;
       border-radius: 50%;
     }
@@ -492,7 +494,7 @@ tbody tr:nth-child(odd) th {
     margin-top: 1rem;
 
     &-date {
-      min-width: 4.4rem;
+      min-width: 4.5rem;
       font-size: 0.75rem;
       margin-top: 0.25rem;
       text-transform: uppercase;
