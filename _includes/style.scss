@@ -16,7 +16,7 @@ html {
   font-weight: 300;
   line-height: 1.6;
 
-  @media (min-width: 38em) {
+  @media only screen and (min-width: 38em) {
     font-size: 20px;
   }
 }
@@ -326,7 +326,7 @@ tbody tr:nth-child(odd) th {
     }
   }
 
-  @media (max-width: 38em) {
+  @media only screen and (max-width: 38em) {
     flex-direction: column;
     align-items: center;
 
