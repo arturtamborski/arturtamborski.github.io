@@ -3,9 +3,8 @@ title: Artur's blog
 author: Artur Tamborski
 description: Programming and tinkering with electronics.
 
-#url: http://localhost:4000
-url: https://arturtamborski.pl
 baseurl: 
+url: https://arturtamborski.pl
 
 disqus:
   id: arturtamborski-pl
@@ -50,10 +49,27 @@ permalink: /:year/:month/:title
 
 markdown: kramdown
 
-sass:
+scss:
   style: compressed
 
-includes_dir: .
+posts_dir: _posts
+pages_dir: _pages
+drafts_dir: _drafts
+assets_dir: assets
+layouts_dir: _layouts
+includes_dir: _includes
+
+include:
+  - _pages
+  - assets
+
+exclude:
+  - _drafts
+  - README.md
+  - LICENSE
+  - CNAME
+  - Gemfile.lock
+  - Gemfile
 
 plugins:
   - jekyll-sitemap
