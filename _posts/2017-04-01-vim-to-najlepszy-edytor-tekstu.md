@@ -2,7 +2,6 @@
 layout: post
 title: VIM to najlepszy edytor tekstu
 description: Nie ma lepszego! ;)
-author: artur
 comments: on
 tags:
   - vim

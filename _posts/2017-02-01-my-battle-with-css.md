@@ -2,7 +2,6 @@
 layout: post
 title: My battle with CSS
 description: or how bad I am with frontend.
-author: artur
 comments: on
 tags:
   - css

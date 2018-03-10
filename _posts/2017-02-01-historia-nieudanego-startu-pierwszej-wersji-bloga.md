@@ -2,7 +2,6 @@
 layout: post
 title: Historia nieudanego startu pierwszej wersji bloga
 description: czyli sprawdź, czy faktycznie działa zanim się pochwalisz ;)
-author: artur
 comments: on
 tags:
   - django
