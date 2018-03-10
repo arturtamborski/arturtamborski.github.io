@@ -42,6 +42,8 @@ layout: compress
       </div>
       {{ content }}
     </div>
+    {% if site.disqus.id %}
     <script id="dsq-count-scr" src="//{{ site.disqus.id }}.disqus.com/count.js" async></script>
+    {% endif %}
   </body>
 </html>
