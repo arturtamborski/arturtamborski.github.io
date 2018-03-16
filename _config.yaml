@@ -65,6 +65,7 @@ include:
   - assets
 
 exclude:
+  - _posts/example.md
   - _drafts
   - README.md
   - LICENSE
