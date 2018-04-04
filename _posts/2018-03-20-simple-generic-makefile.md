@@ -37,13 +37,15 @@ and that's a problem. But we can fix it with variables:
 
 ```makefile
 $(TARGET): $(OBJS)
-	gcc -o $@ $?
+	gcc -o $@ $^
 
 $(OBJS): $(OBJDIR)/%$(OBJEXT) : $(SRCDIR)/%$(SRCEXT)
 	gcc -c -o $@ $?
 ```
 
 Here's a description of these variables:
+  - `$^` is list of all files after the target name (all object files)
+  - `$?` is list of all modified files that have to be compiled (modified source files)
   - `$(TARGET)` is just the name of a compiled app,
   - `$(OBJS)` is a list of files based on source files,
   - `$(SRCDIR)` and `$(OBJDIR)` are the names of source and binary directories,
@@ -70,7 +72,7 @@ clean:
 	@rm -r $(TARGET) $(OBJS) $(OBJDIR)
 
 $(TARGET): $(OBJS)
-	@$(LD) $(LDFLAGS) -o $@ $?
+	@$(LD) $(LDFLAGS) -o $@ $^
 
 $(OBJS): $(OBJDIR)/%$(OBJEXT) : $(SRCDIR)/%$(SRCEXT) | $(OBJDIR)
 	@$(CC) $(CCFLAGS) -c -o $@ $?
@@ -169,7 +171,7 @@ clean:
 	@rm -r $(TARGET) $(OBJS) $(OBJDIR) 2>/dev/null || true
 
 $(TARGET): $(OBJS) | $(OBJDIR)
-	@$(LD) $(LDFLAGS) -o $@ $?
+	@$(LD) $(LDFLAGS) -L$(OBJDIR) -o $@ $^
 
 $(OBJS): $(OBJDIR)/%$(OBJEXT) : $(SRCDIR)/%$(SRCEXT) | $(OBJDIR)
 	@$(CC) $(CCFLAGS) -I$(INCDIR) -c -o $@ $?
