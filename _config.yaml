@@ -78,3 +78,16 @@ plugins:
   - jekyll-seo-tag
   - jekyll-avatar
   - jekyll-feed
+
+
+# compress.html by Jonathan Volebregt
+# http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  ignore:
+    envs: [local]
+  blanklines: false
+  profile: false
+  startings: [html, head, body]
