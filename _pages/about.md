@@ -17,4 +17,5 @@ You can find me on [linkedin](https://www.linkedin.com/in/arturtamborski) and [g
 
 There's also my [twitter](https://twitter.com/arturtamborski) where I post some random thoughts.
 
-You can contact me on [keybase](https://keybase.io/arturtamborski) or via [email](mailto:tamborskiartur@gmail.com).
+You can contact me via [telegram](https://telegram.me/arturtamborski), [keybase](https://keybase.io/arturtamborski) or [email](mailto:tamborskiartur@gmail.com).
+
