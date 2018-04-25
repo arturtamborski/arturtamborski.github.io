@@ -32,6 +32,8 @@ nav:
   local:
     - name: about
       href: /about
+    - name: ideas
+      href: /ideas
     - name: tags
       href: /tags
     - name: feed
