@@ -1,15 +1,20 @@
 ---
-layout: page
-title: Ideas
-permalink: /ideas
+layout: post
+title: My ideas for future projects
+description: Maybe you'll find something interesting here.
+comments: true
+tags:
+- blog
 ---
 
 >Ideas are cheap.
 
 Here's my list of them, few of which might be cool.  
-You can use any of these, but please tell me if you do.
+You can use any of these, but please tell me if you do.  
+I might update it in the future. Or not, I don't know yet.
 
 ## Games:
+  - [game ideas generator](http://orteil.dashnet.org/gamegen)
   - Airfix DogFighter clone (OpenGL?/WebGL?/Mobile?)
   - RPG/RougeLike game in Pixel art / ASCII art (use REXPaint/libcaca)
   - Logic games such as match solver, sudoku solver etc, (ML? Game Theory?)
