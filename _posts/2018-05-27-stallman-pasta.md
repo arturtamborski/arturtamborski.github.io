@@ -54,5 +54,5 @@ But I've never found a cool answer to this until recently - here it is.
 > or Just Linux. All the so-called "GNU/Linux" distributions are really 
 > distributions of Linux.
 
-Please, keep in mind that I do respect him and his words. 
-I also mostly agree on his words and his ideas, but sometimes he gets off track.
+Please keep in mind that I do respect him. I also mostly agree on his words 
+and ideas, but sometimes he gets off track.
