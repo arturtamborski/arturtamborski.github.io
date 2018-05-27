@@ -1,0 +1,58 @@
+---
+layout: post
+title: Stallman's pasta
+description: and cool response to it
+comments: true
+tags:
+- blog
+---
+
+So, some time ago Richard Stallman said this:
+
+> I'd just like to interject for a moment. 
+> What you’re referring to as Linux, is in fact, GNU/Linux, or as I’ve recently 
+> taken to calling it, GNU plus Linux. Linux is not an operating system unto 
+> itself, but rather another free component of a fully functioning GNU system 
+> made useful by the GNU corelibs, shell utilities and vital system components 
+> comprising a full OS as defined by POSIX. Many computer users run a modified 
+> version of the GNU system every day, without realizing it. Through a peculiar 
+> turn of events, the version of GNU which is widely used today is often called 
+> “Linux”, and many of its users are not aware that it is basically the GNU 
+> system, developed by the GNU Project. There really is a Linux, and these 
+> people are using it, but it is just a part of the system they use. Linux is 
+> the kernel: the program in the system that allocates the machine’s resources 
+> to the other programs that you run. The kernel is an essential part of an 
+> operating system, but useless by itself; it can only function in the context 
+> of a complete operating system. Linux is normally used in combination with the 
+> GNU operating system: the whole system is basically GNU with Linux 
+> added, or GNU/Linux. All the so-called “Linux” distributions are really 
+> distributions of GNU/Linux.
+
+and it became a joke. Of course its not completely false - GNU utils do play a 
+big role in the Linux ecosystem but they are not as important as they  used to 
+be so the proposed name GNU/Linux was a bit of a exaggeration. 
+But I've never found a cool answer to this until recently - here it is.
+
+> I'm terribly sorry for interjecting another moment, but what I just told you 
+> is GNU/Linux is, in fact, just Linux, or as I've just now taken to calling it,
+> Just Linux. Linux apparently does happen to be a whole operating system unto 
+> itself and comprises a full OS as defined by POSIX.
+> 
+> Most computer users who run the entire Linux operating system every day 
+> already realize it. Through a peculiar turn of events, I was misled into
+> calling the system "GNU/Linux", and until now, I was unaware that it is
+> basically the Linux system, developed by the Linux project.
+>
+> There really isn't a GNU/Linux, and I really wasn't using it; it is an 
+> extraneous misrepresentation of the system that's being used. Linux is the 
+> operating system: the entire system made useful by its included corelibs, 
+> shell utilities, and other vital system components. The kernel is already 
+> an integral part of the Linux operating system, never confined useless by 
+> itself; it functions coherently within the context of the complete Linux 
+> operating system. Linux is never used in combination with 
+> GNU accessories: the whole system is basically Linux without any GNU added, 
+> or Just Linux. All the so-called "GNU/Linux" distributions are really 
+> distributions of Linux.
+
+Please, keep in mind that I do respect him and his words. 
+I also mostly agree on his words and his ideas, but sometimes he gets off track.
