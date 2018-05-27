@@ -82,32 +82,20 @@ dd {
 }
 
 ul {
-  list-style: inside circle;
-  padding-left: 0;
+  list-style: inside none;
+  padding-left: 1rem;
 
   li {
-    margin-bottom: .25rem;
+    margin-bottom: .125rem;
+    &::before {
+      content: "–";
+      margin-right: 0.5rem;
+    }
   }
 
   ul,
   ol {
-    margin-top: .25rem;
-    margin-bottom: .5rem;
-  }
-}
-
-ol {
-  list-style: inside decimal;
-  padding-left: 0;
-
-  li {
     margin-bottom: .25rem;
-  }
-
-  ul,
-  ol {
-    margin-top: .25rem;
-    margin-bottom: .5rem;
   }
 }
 
@@ -120,7 +108,7 @@ ul + h3,
 ol + h1,
 ol + h2,
 ol + h3 {
-  margin-top: 1.5rem;
+  margin-top: 1.25rem;
 }
 
 hr {
@@ -501,11 +489,6 @@ tbody tr:nth-child(odd) th {
 }
 
 /* Tomorrow Light */
- 
-/* For use with Jekyll and Pygments */
-
-/* ----------------------------------------------------------*/
-
 .highlight pre,
 .highlight code,
 .highlight .hll { background-color: inherit; }
@@ -572,4 +555,3 @@ tbody tr:nth-child(odd) th {
 .highlight .vg { color: #c82829 } /* Name.Variable.Global */
 .highlight .vi { color: #c82829 } /* Name.Variable.Instance */
 .highlight .il { color: #f5871f } /* Literal.Number.Integer.Long */
-

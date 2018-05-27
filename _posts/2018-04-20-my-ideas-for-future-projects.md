@@ -48,6 +48,7 @@ I might update it in the future. Or not, I don't know yet.
   - BBS Server, a lot of old software
   - 4chan browser in terminal, use this fancy lib for displaying media in terminal (really put a lot of work into this, its a great idea)
   - dwm/suckless software patches, extensions etc
+  - HA-3 virus (Ghost in the Shell reference)
 
 ## Embeded:
   - Line follower (Theese optical sensors are still waiting for me...)
