@@ -3,6 +3,10 @@ title: Artur's blog
 author: Artur Tamborski
 description: Programming and tinkering with electronics.
 
+encoding: utf-8
+future: false
+unpublished: false
+
 baseurl:
 url: https://arturtamborski.pl
 
