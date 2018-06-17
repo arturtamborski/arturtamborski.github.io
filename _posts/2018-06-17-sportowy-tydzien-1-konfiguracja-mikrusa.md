@@ -75,7 +75,7 @@ Jeśli wszystko się udało to teraz możesz się dużo łatwiej logować na 
 
 
 
-## 3. menager pakietów
+## 3. Manager pakietów
 
 	slackpkg update gpg
 	slackpkg update
