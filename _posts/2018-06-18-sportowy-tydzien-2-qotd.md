@@ -1,6 +1,6 @@
 ---
 layout: post
-title: sPortowy Tydzień 0x03 - Quote Of The Day
+title: sPortowy Tydzień 0x02 - Quote Of The Day
 description: The simplest of them all
 comments: true
 tags:
