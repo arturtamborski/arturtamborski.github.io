@@ -64,3 +64,5 @@ I might update it in the future. Or not, I don't know yet.
   - Graphical pattern generator based on [stupid-raytracer](https://github.com/arturtamborski/c-playground/stupid-raytracer),
   - IRC/facebook/twitter/reddit/other IM platform bot
   - Dotfiles generator for ricing
+  - Marker extended markdown based on syntax from github's markdown, dokuwiki and other text formats
+  - OpenNotes/FreeNotes/LibreNotes - notes about everything I'm interested in as public domain knowledge thats easy to learn
