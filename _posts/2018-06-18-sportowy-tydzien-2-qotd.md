@@ -54,3 +54,6 @@ Dlatego też napisałem własną, prostą wersję takiego programu -
 Nie jest to nic specjalnego, ale działa całkiem fajnie.
 Program w pewnym sensie działa jak proste proxy dla aplikacji fortune ale 
 nie naraża systemu bo zrzuca uprawnienia zaraz po zajęciu portu.
+
+Więcej na temat połączenia się z usługą możecie znaleść na stronie mojego
+mikrusa pod tym adresem [uw515.mikr.us](http://uw515.mikr.us/).
