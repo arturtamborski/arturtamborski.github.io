@@ -11,7 +11,7 @@ body {
 }
 
 html {
-  font-family: Lato;
+  font-family: Helvetica;
   font-size: 18px;
   font-weight: 300;
   line-height: 1.6;
@@ -148,7 +148,7 @@ blockquote {
 
 code,
 pre {
-  font-family: Mono;
+  font-family: Courier, monospace;
   color: #333;
   font-size: .75rem;
   padding: 0 4px 0 4px;
@@ -160,6 +160,7 @@ pre {
   line-height: 1.4;
   white-space: pre;
   border: 1px solid #ccc;
+  overflow-x: auto;
 }
 
 code {
@@ -183,7 +184,7 @@ pre code {
 }
 
 .gist .gist-file {
-  font-family: Menlo, Monaco, "Courier New", monospace !important;
+  font-family: Courier, monospace;
 }
 
 .gist .markdown-body {
