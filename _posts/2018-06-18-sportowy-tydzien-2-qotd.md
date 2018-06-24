@@ -48,7 +48,7 @@ i biblioteki do obsługi połączeń TCP.
 
 
 Dlatego też napisałem własną, prostą wersję takiego programu - 
-[qotd](https://github.com/arturtamborski/c-playground/qotd).
+[qotd](https://github.com/arturtamborski/c-playground/tree/master/qotd).
 
 
 Nie jest to nic specjalnego, ale działa całkiem fajnie.
