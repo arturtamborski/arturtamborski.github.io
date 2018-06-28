@@ -60,7 +60,7 @@ scss:
 posts_dir: _posts
 pages_dir: _pages
 drafts_dir: _drafts
-assets_dir: assets
+assets_dir: files
 layouts_dir: _layouts
 includes_dir: _includes
 

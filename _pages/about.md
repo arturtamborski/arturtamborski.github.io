@@ -6,10 +6,14 @@ permalink: /about
 
 Hi, I'm Artur and this is my blog :)
 
-You can find here posts about programming, tinkering with electronics and more.
+You can find here some of my posts about programming, tinkering with 
+electronics and more.
 
-I'm interested in almost every aspect of technology and I like to know how things work.
-Besides that I love pretty much every genre of music.
+I'm interested in pretty much every aspect of the Information Technology.  
+I also play the bass guitar and love pretty much every genre of music.
+
+
+Here's [my CV]({{ site.assets_dir }}/cv-artur-tamborski.pdf).
 
 If you would like to know more about me then you can check out my [geekcode](/geekcode.txt).
 
