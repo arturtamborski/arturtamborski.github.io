@@ -4,7 +4,6 @@ title: Recenzja książki "Junior Developer"
 description: wyszło trochę stronniczo, ale szczerze
 comments: true
 tags:
-- blog
 - recenzja
 ---
 
@@ -19,7 +18,7 @@ się pakuję.
 
 Na szczęście w międzyczasie zamówiłem sobie książkę w której pokrywałem 
 nadzieje na wprowadzenie mnie w "ten" świat autorstwa Mateusza Kupilasa 
-znanego również pod nickiem [JavaDevMatt](https://javadevmatt.pl).
+znanego również pod nickiem [JavaDevMatt](http://www.javadevmatt.pl).
 
 Drobna notka: Śledzę kilkunastu polskich programistów którzy głośniej 
 udzielają się w internecie upatrując w nich cechy którymi warto się inspirować. Jedną z takich osób jest właśnie Matt. 
@@ -53,7 +52,7 @@ wymieniający najważniejsze umiejętności potrzebne w pracy.
 To mogłoby się wydawać oczywistością ale i tak można z tego wyciągnąć 
 kilka ciekawych informacji, np. metoda rozwiązywania problemów 
 "dziel i zwyciężaj" oraz sposoby na problem 
-[siedzenia w jaskini](https://juniordeveloper.pl/jaskinia).
+[siedzenia w jaskini](http://juniordeveloper.pl/jaskinia).
 
 
 Następny rodział to problem chyba każdego programisty - studia. 
@@ -96,4 +95,5 @@ bo można przeczytać ją czekając na dostawę a potem jeszcze raz skupiając
 się na bardziej interesujących fragmentach.
 
 
-Można ją zamówić [tutaj](https://javadevmatt.shoplo.com) a tu jest [oficjalna strona książki](https://juniordeveloper.pl).
+Można ją zamówić [tutaj](https://javadevmatt.shoplo.com) a tu jest 
+[oficjalna strona książki](http://juniordeveloper.pl).
