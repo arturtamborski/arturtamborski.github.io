@@ -52,4 +52,4 @@ we wspomnianej książce (która jest świetna swoją drogą, serio).
 Podsumowując - program działa szybko i fajnie ale nie robi nic ciekawego.
 Za tydzień wezmę się za coś lepszego.
 
-[Link do kodu](https://github.com/arturtamborski/c-playground/tree/master/echod/) i [link postu na mikrusie](http://uw515.mirk.us/posts/echod.html).
+[Link do kodu](https://github.com/arturtamborski/c-playground/tree/master/echod/) i [link postu na mikrusie](http://uw515.mikr.us/posts/echod.html).
