@@ -13,7 +13,7 @@ I'm interested in pretty much every aspect of the Information Technology.
 I also play the bass guitar and love pretty much every genre of music.
 
 
-Here's [my CV]({{ site.assets_dir }}/cv-artur-tamborski.pdf).
+Here's [my CV]({{ site.assets_dir }}/cv.pdf).
 
 If you would like to know more about me then you can check out my [geekcode](/geekcode.txt).
 
