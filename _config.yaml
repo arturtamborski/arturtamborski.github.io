@@ -76,6 +76,7 @@ exclude:
   - CNAME
   - Gemfile.lock
   - Gemfile
+  - new-post.sh
 
 plugins:
   - jekyll-sitemap
