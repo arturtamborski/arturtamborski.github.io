@@ -86,5 +86,5 @@ Like, really. This thing made my day today. I mean, yeah I could
 just use some ugly oneliner or write some commands multiple times
 but that little sneaky trick with base64 just caught me from surprise.
 
-That's all. It's not really ideal and well, the ansible is better
+It's not really ideal and well, the ansible is better
 but when all you have is a shell then it's still more than enough.
