@@ -1,6 +1,9 @@
 run:
 	bundler exec jekyll serve
 
+debug:
+	bundler exec jekyll serve --incremental
+
 build:
 	bundler exec jekyll build
 
