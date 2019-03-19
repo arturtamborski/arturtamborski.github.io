@@ -58,22 +58,22 @@ scss:
   style: compressed
 
 posts_dir: _posts
-pages_dir: _pages
-drafts_dir: _drafts
+pages_dir: pages
+drafts_dir: drafts
 assets_dir: files
 layouts_dir: _layouts
 includes_dir: _includes
 
 include:
-  - _pages
-  - assets
+  - pages
+  - files
 
 exclude:
-  - _posts/example.md
-  - _drafts
-  - README.md
-  - LICENSE
   - CNAME
+  - drafts
+  - license
+  - readme.md
+  - makefile
   - gemfile
   - Gemfile.lock
 
