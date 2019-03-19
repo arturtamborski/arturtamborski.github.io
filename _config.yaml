@@ -61,6 +61,7 @@ include:
 exclude:
   - CNAME
   - drafts
+  - includes
   - license
   - readme.md
   - makefile
