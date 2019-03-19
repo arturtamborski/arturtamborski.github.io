@@ -62,7 +62,7 @@ pages_dir: pages
 drafts_dir: drafts
 assets_dir: files
 layouts_dir: _layouts
-includes_dir: _includes
+includes_dir: includes
 
 include:
   - pages
