@@ -3,18 +3,20 @@ title: Artur's blog
 author: Artur Tamborski
 description: Programming and tinkering with electronics.
 
-encoding: utf-8
-future: false
-unpublished: false
-
 baseurl:
 url: https://arturtamborski.pl
 
+lang: pl_PL
+language: pl
+encoding: utf-8
+timezone: Europe/Warsaw
+
+future: no
+unpublished: no
+permalink: /:year/:month/:title
+
 disqus:
   id: arturtamborski-pl
-
-github:
-  username: arturtamborski
 
 twitter:
   username: arturtamborski
@@ -25,12 +27,10 @@ author:
 social:
   name: Artur Tamborski
   links:
-    - https://keybase.io/arturtamborski
     - https://github.com/arturtamborski
     - https://twitter.com/arturtamborski
     - https://www.linkedin.com/in/arturtamborski
     - https://facebook.com/tamborskiartur
-    - https://plus.google.com/100097744760992392463
 
 nav:
   local:
@@ -46,16 +46,6 @@ nav:
       href: https://github.com/arturtamborski
     - name: twitter
       href: https://twitter.com/arturtamborski
-
-lang: pl_PL
-language: pl
-timezone: Europe/Warsaw
-permalink: /:year/:month/:title
-
-markdown: kramdown
-
-scss:
-  style: compressed
 
 posts_dir: _posts
 pages_dir: pages
@@ -82,7 +72,10 @@ plugins:
   - jekyll-seo-tag
   - jekyll-avatar
   - jekyll-feed
+  - jekyll-redirect-from
 
+scss:
+  style: compressed
 
 # compress.html by Jonathan Volebregt
 # http://jch.penibelst.de/
