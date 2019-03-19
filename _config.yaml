@@ -74,9 +74,8 @@ exclude:
   - README.md
   - LICENSE
   - CNAME
+  - gemfile
   - Gemfile.lock
-  - Gemfile
-  - new-post.sh
 
 plugins:
   - jekyll-sitemap
