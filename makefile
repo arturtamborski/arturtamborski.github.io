@@ -14,6 +14,6 @@ clean:
 	rm -r _site
 
 clean-deps:
-	rm -r .bundle
+	rm -rf .bundle
 
 .PHONY: run debug build install clean clean-deps
