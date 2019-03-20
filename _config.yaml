@@ -36,8 +36,8 @@ nav:
   local:
     - name: about
       href: /about
-    - name: tags
-      href: /tags
+    - name: projects
+      href: /projects
     - name: feed
       href: /feed.xml
 
