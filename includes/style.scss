@@ -258,7 +258,9 @@ tbody tr:nth-child(odd) th {
   }
 
   &-title {
+    width: 100%;
     margin-top: 0.5rem;
+    text-align: center;
 
     a {
       color: #333;
@@ -281,6 +283,7 @@ tbody tr:nth-child(odd) th {
   }
 
   &-nav {
+    font-size: 0.80rem;
     display: flex;
     flex-direction: row;
 
