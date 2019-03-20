@@ -103,3 +103,7 @@ I guess I should've have seen this comming, oh well.
 Anyways, it worked fine for quite a few times when I needed to do some dirty work in fastest way possible so I guess it wasn't a complete waste of time.
 
 Or at least I hope so.
+
+
+PS: This *is* a joke. Seriously. I've received at least few comments on why I have made it and do I really use it - no I do not.  
+It's a joke, I made it to play around with a friend, it was fun but we both now use ansible. Please please please don't take this bash as a serious tool.  
