@@ -13,13 +13,13 @@ I'm interested in pretty much every aspect of the Information Technology.
 I also play the bass guitar and love pretty much every genre of music.
 
 
-Here's [my CV]({{ site.assets_dir }}/cv.pdf).
+Here's [my CV](/cv).
 
 If you would like to know more about me then you can check out my [geekcode](/geekcode.txt).
 
-You can find me on [linkedin](https://www.linkedin.com/in/arturtamborski) and [github](https://github.com/arturtamborski/) where I keep the source code of my projects.
+You can find me on [linkedin](/linkedin) and [github](/github) where I keep the source code of my projects.
 
-There's also my [twitter](https://twitter.com/arturtamborski) where I post some random thoughts (and [mastodon](https://mastodon.social/@arturtamborski) but I don't use it that often).
+There's also my [twitter](/twitter) where I post some random thoughts.
 
-You can contact me via [telegram](https://telegram.me/arturtamborski), [keybase](https://keybase.io/arturtamborski) or [email](mailto:tamborskiartur@gmail.com).
+You can contact me via [telegram](/telegram) or [email](/email).
 

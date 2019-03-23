@@ -43,9 +43,9 @@ nav:
 
   external:
     - name: github
-      href: https://github.com/arturtamborski
+      href: /github
     - name: twitter
-      href: https://twitter.com/arturtamborski
+      href: /twitter
 
 posts_dir: _posts
 pages_dir: pages
