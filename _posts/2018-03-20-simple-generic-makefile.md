@@ -4,7 +4,7 @@ title: Simple generic Makefile
 description: Just 40 lines!
 comments: true
 tags:
-- make
+- linux
 ---
 
 Have you ever tried to write Makefile for your project? If not then I can tell you - its a mess.

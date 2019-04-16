@@ -4,6 +4,7 @@ title: Stallman's pasta
 description: and cool response to it
 comments: true
 tags:
+- fun
 - blog
 ---
 

@@ -4,7 +4,7 @@ title: VIM to najlepszy edytor tekstu
 description: Nie ma lepszego! ;)
 comments: on
 tags:
-  - vim
+  - linux
 ---
 
 Jeśli myślisz, że twój `notepad++` jest lepszy, to wiedz, że nie jest.

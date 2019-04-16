@@ -4,6 +4,7 @@ title: Poor man's ansible has got out of control
 description: lesson learned - let simple stuff actually stay _simple_.
 comments: true
 tags:
+- fun
 - linux
 ---
 

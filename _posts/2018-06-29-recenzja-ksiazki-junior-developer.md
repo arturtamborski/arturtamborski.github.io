@@ -4,7 +4,7 @@ title: Recenzja książki "Junior Developer"
 description: wyszło trochę stronniczo, ale szczerze
 comments: true
 tags:
-- recenzja
+- blog
 ---
 
 Wczoraj napisałem ostatni egzamin kwalifikacyjny E14 z części praktycznej 

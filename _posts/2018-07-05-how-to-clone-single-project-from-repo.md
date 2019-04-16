@@ -4,7 +4,7 @@ title: How to clone single directory from git repo
 description: simple and effective
 comments: true
 tags:
-- git
+- linux
 ---
 
 Just a quick tip - I was looking for a way to download a single directory from

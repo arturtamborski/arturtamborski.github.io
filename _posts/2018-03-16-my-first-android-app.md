@@ -4,7 +4,7 @@ title: My first android app
 description: Fake it 'till you make it!
 comments: true
 tags:
-- android
+- blog
 ---
 
 I wanted to make something __new__. I wanted to test myself - can I still learn and adapt quickly in new environment?

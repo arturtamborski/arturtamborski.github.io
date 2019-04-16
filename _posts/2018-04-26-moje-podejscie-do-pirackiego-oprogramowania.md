@@ -5,7 +5,6 @@ description: Jakie jest twoje zadnie na ten temat?
 comments: true
 tags:
 - blog
-- software
 ---
 
 [Jakub Mrugalski](https://www.facebook.com/jakub.mrugalski) zadał [bardzo ciekawe pytanie](https://www.facebook.com/jakub.mrugalski/videos/10211698830003030/) o moralności 

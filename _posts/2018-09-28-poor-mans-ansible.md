@@ -4,6 +4,7 @@ title: Poor man's ansible
 description: it's simple and it works :)
 comments: true
 tags:
+- fun
 - linux
 ---
 
