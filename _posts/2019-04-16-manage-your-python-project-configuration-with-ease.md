@@ -88,13 +88,12 @@ cklass.load_config(Config)
 
 This is pretty much all you need to do in python to get it
 working - define class, spell out some attributes with
-caps lock and call one function.
+capslock and call one function.
 
 
 Now the overwriting part comes in:
 ```yaml
 # config.yaml
-
 config:
   debug: false
   verbosity-level: 0
@@ -112,7 +111,11 @@ config:
 ```
 
 ```shell
+# bash
 export CONFIG__SECRET__KEY='&&citiAlfa5?'
+
+# start your app
+python config.py
 ```
 
 Thanks to the conf posted above my class attributes are now
@@ -141,8 +144,7 @@ Of course you can change the filenames by adding few more attrs
 to the class or tinker with few more aspects of it but that's out
 of the scope for this blog post - all I wanted to show you now is here.
 
-If you want to know more check out the git repo:
-[cklass](https://github.com/arturtamborski/cklass) and it's
-[pip page](https://pypi.org/project/cklass) :)
-
-I hope that it will be as useful to you as it is to me.
+If you want to know more check out the
+[git repo](https://github.com/arturtamborski/cklass) and it's
+[pip page](https://pypi.org/project/cklass).
+I hope that it will be as useful to you as it is to me :)
